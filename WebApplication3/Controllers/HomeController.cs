@@ -26,5 +26,11 @@ namespace WebApplication3.Controllers
 
             return View();
         }
+        public ActionResult list()
+        {
+            string[] data = new string[] { "看一看", "其那", "走远提走", "123" };
+            ViewData.Model = data;
+            return View(data);
+        }
     }
 }
